@@ -1,0 +1,146 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.logo img {
+    height: 100px;
+    width: 150px;
+    object-fit: contain;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff6347;
+}
+
+/* Section styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+/* Services Section Styles */
+#services {
+    background-color: #eaeaea;
+    padding: 20px 0;
+}
+
+/* Service Grid Layout */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create responsive grid */
+    gap: 20px;  /* Space between service boxes */
+    padding: 20px;
+}
+
+/* Individual service box styles */
+.service {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-image {
+    width: 100%;  /* Adjust image size for better visibility */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.service h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Hover effect for service boxes */
+.service:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .service {
+        padding: 10px;
+    }
+
+    .service-image {
+        width: 70%; /* Adjust the image size for smaller screens */
+    }
+
+    .service h3 {
+        font-size: 16px;
+    }
+
+    .service p {
+        font-size: 12px;
+    }
+}
